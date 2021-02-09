@@ -1,3 +1,59 @@
-body {
-	color: rgb(0, 116, 0);
+/* Обнуление */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box !important;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ol, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button, input {
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+}
+
+/* ============================================================================================ */
+
+.container {
+	max-width: 100%;
+	padding: 0 30px;
+}
+
+.logo img {
+	width: 80px;
+	height: 60px;
+	object-fit: contain;
+}
+
+
+
+
+
+
+@media screen and (min-width: 610px) {
+	.container {
+		max-width: 610px;
+		margin: 0 auto;
+	}
 }
